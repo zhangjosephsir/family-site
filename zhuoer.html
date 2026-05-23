@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二公主张卓尔 - 张氏家庭网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #F0E6FF 0%, #E6D5F2 100%);
+            min-height: 100vh;
+            color: #5D4E37;
+        }
+        header {
+            background: linear-gradient(135deg, #DDA0DD 0%, #DA70D6 100%);
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(218, 112, 214, 0.4);
+        }
+        header h1 { color: white; font-size: 2em; margin-bottom: 5px; }
+        header p { color: #F5E6FA; }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            background: rgba(255,255,255,0.8);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            padding: 10px 20px;
+            background: white;
+            border-radius: 25px;
+            text-decoration: none;
+            color: #9370DB;
+            font-weight: 600;
+            box-shadow: 0 3px 10px rgba(147, 112, 219, 0.2);
+            transition: all 0.3s ease;
+        }
+        nav a:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(147, 112, 219, 0.3); }
+        nav a.active { background: linear-gradient(135deg, #DDA0DD, #DA70D6); color: white; }
+        main { max-width: 1200px; margin: 0 auto; padding: 30px 20px; }
+        .back { display: inline-block; margin-bottom: 20px; padding: 10px 20px; background: white; border-radius: 20px; text-decoration: none; color: #9370DB; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .photo-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(147, 112, 219, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .photo-card:hover { transform: scale(1.02); }
+        .photo-card img { width: 100%; height: 250px; object-fit: cover; }
+        .photo-card .desc { padding: 15px; text-align: center; color: #9370DB; font-size: 0.95em; }
+        footer { text-align: center; padding: 30px; background: linear-gradient(135deg, #DA70D6, #DDA0DD); margin-top: 40px; color: white; }
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.5em; }
+            .photo-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
+            .photo-card img { height: 180px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>👧 二公主 · 张卓尔</h1>
+        <p>优雅端庄的小淑女</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">🏠 首页</a>
+        <a href="living-room.html">客厅</a>
+        <a href="yueer.html">大公主</a>
+        <a href="zhuoer.html" class="active">二公主</a>
+        <a href="heer.html">王子</a>
+        <a href="father.html">爸爸</a>
+        <a href="mother.html">妈妈</a>
+    </nav>
+    
+    <main>
+        <a href="index.html" class="back">← 返回首页</a>
+        
+        <div class="photo-grid">
+            <div class="photo-card">
+                <img src="photos/zhuoer/zhuoer_waterfall_train.jpg" alt="火车窗边">
+                <div class="desc">火车窗边</div>
+            </div>
+            <div class="photo-card">
+                <img src="photos/zhuoer/zhuoer_waterfall_point.jpg" alt="瀑布指前方">
+                <div class="desc">瀑布指前方</div>
+            </div>
+            <div class="photo-card">
+                <img src="photos/zhuoer/zhuoer_waterfall_pinkponcho.jpg" alt="粉色雨衣瀑布">
+                <div class="desc">粉色雨衣瀑布</div>
+            </div>
+            <div class="photo-card">
+                <img src="photos/zhuoer/zhuoer_drum_dress.jpg" alt="花裙大鼓">
+                <div class="desc">花裙大鼓</div>
+            </div>
+            <div class="photo-card">
+                <img src="photos/zhuoer/zhuoer_park_minnie.jpg" alt="公园米妮">
+                <div class="desc">公园米妮</div>
+            </div>
+            <div class="photo-card">
+                <img src="photos/zhuoer/zhuoer_moon_robot.jpg" alt="月亮机器人">
+                <div class="desc">月亮机器人</div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>👧 张卓尔的专属相册</p>
+    </footer>
+</body>
+</html>

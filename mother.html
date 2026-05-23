@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>妈妈徐立梅 - 张氏家庭网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #FFF0F5 0%, #FFE4EC 100%);
+            min-height: 100vh;
+            color: #5D4E37;
+        }
+        header {
+            background: linear-gradient(135deg, #E896A0 0%, #E07A8A 100%);
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(224, 122, 138, 0.4);
+        }
+        header h1 { color: white; font-size: 2em; margin-bottom: 5px; }
+        header p { color: #FFF0F5; }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            background: rgba(255,255,255,0.8);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            padding: 10px 20px;
+            background: white;
+            border-radius: 25px;
+            text-decoration: none;
+            color: #C96A78;
+            font-weight: 600;
+            box-shadow: 0 3px 10px rgba(201, 106, 120, 0.2);
+            transition: all 0.3s ease;
+        }
+        nav a:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(201, 106, 120, 0.3); }
+        nav a.active { background: linear-gradient(135deg, #E896A0, #E07A8A); color: white; }
+        main { max-width: 1200px; margin: 0 auto; padding: 30px 20px; }
+        .back { display: inline-block; margin-bottom: 20px; padding: 10px 20px; background: white; border-radius: 20px; text-decoration: none; color: #C96A78; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .photo-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(201, 106, 120, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .photo-card:hover { transform: scale(1.02); }
+        .photo-card img { width: 100%; height: 250px; object-fit: cover; }
+        .photo-card .desc { padding: 15px; text-align: center; color: #C96A78; font-size: 0.95em; }
+        footer { text-align: center; padding: 30px; background: linear-gradient(135deg, #E07A8A, #E896A0); margin-top: 40px; color: white; }
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.5em; }
+            .photo-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
+            .photo-card img { height: 180px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>👩 妈妈 · 徐立梅</h1>
+        <p>温柔贤惠的女主人</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">🏠 首页</a>
+        <a href="living-room.html">客厅</a>
+        <a href="yueer.html">大公主</a>
+        <a href="zhuoer.html">二公主</a>
+        <a href="heer.html">王子</a>
+        <a href="father.html">爸爸</a>
+        <a href="mother.html" class="active">妈妈</a>
+    </nav>
+    
+    <main>
+        <a href="index.html" class="back">← 返回首页</a>
+        
+        <div class="photo-grid">
+            <div class="photo-card">
+                <img src="photos/mother/mother_waterfall_white_cardigan.jpg" alt="白开衫瀑布照">
+                <div class="desc">白开衫瀑布照</div>
+            </div>
+            <div class="photo-card">
+                <img src="photos/mother/mother_waterfall_white_jacket.jpg" alt="白外套瀑布照">
+                <div class="desc">白外套瀑布照</div>
+            </div>
+            <div class="photo-card">
+                <img src="photos/mother/mother_waterfall_white_dress.jpg" alt="白裙瀑布照">
+                <div class="desc">白裙瀑布照</div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>👩 徐立梅的专属相册</p>
+    </footer>
+</body>
+</html>

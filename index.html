@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张氏家庭网站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #FFF8F0 0%, #FFE4D6 100%);
+            min-height: 100vh;
+            color: #5D4E37;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #FF9A8B 0%, #FFECD2 100%);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(255, 154, 139, 0.3);
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            color: #8B4513;
+            text-shadow: 2px 2px 4px rgba(255,255,255,0.5);
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            color: #A0522D;
+            font-size: 1.1em;
+        }
+        
+        /* Navigation */
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px 25px;
+            background: linear-gradient(145deg, #FFFFFF, #FFE4D6);
+            border-radius: 20px;
+            text-decoration: none;
+            color: #8B4513;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(255, 154, 139, 0.2);
+            transition: all 0.3s ease;
+            min-width: 120px;
+        }
+        
+        nav a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(255, 154, 139, 0.4);
+        }
+        
+        nav .emoji {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+        
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,228,214,0.9));
+            border-radius: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(255, 154, 139, 0.15);
+        }
+        
+        .hero h2 {
+            font-size: 2em;
+            color: #8B4513;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            color: #A0522D;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        
+        /* Family Members Grid */
+        .family-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .family-card {
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(139, 69, 19, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .family-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .family-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .family-card .content {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .family-card h3 {
+            color: #8B4513;
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+        
+        .family-card p {
+            color: #A0522D;
+            font-size: 0.95em;
+        }
+        
+        .family-card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 25px;
+            background: linear-gradient(135deg, #FF9A8B, #FFECD2);
+            border-radius: 25px;
+            text-decoration: none;
+            color: #8B4513;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .family-card a:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #FFECD2 0%, #FF9A8B 100%);
+            margin-top: 60px;
+            color: #8B4513;
+        }
+        
+        footer p {
+            font-size: 0.9em;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            nav a {
+                padding: 12px 20px;
+                min-width: 100px;
+            }
+            
+            nav .emoji {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🏠 张氏家庭网站</h1>
+        <p>记录美好时光 · 珍藏温暖回忆</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">
+            <span class="emoji">🏠</span>
+            <span>客厅</span>
+        </a>
+        <a href="yueer.html">
+            <span class="emoji">👧</span>
+            <span>大公主</span>
+        </a>
+        <a href="zhuoer.html">
+            <span class="emoji">👧</span>
+            <span>二公主</span>
+        </a>
+        <a href="heer.html">
+            <span class="emoji">👦</span>
+            <span>王子</span>
+        </a>
+        <a href="father.html">
+            <span class="emoji">👨</span>
+            <span>爸爸</span>
+        </a>
+        <a href="mother.html">
+            <span class="emoji">👩</span>
+            <span>妈妈</span>
+        </a>
+    </nav>
+    
+    <main>
+        <section class="hero">
+            <h2>👨‍👩‍👧‍👦 欢迎来到张家</h2>
+            <p>这里收藏着我们家庭的每一个温暖瞬间</p>
+            <p>从大公主的成长足迹，到小王子的萌趣日常</p>
+            <p>从爸妈的温馨合影，到全家的幸福时光</p>
+        </section>
+        
+        <div class="family-grid">
+            <div class="family-card">
+                <img src="photos/yueer/cover.jpg" alt="张越尔">
+                <div class="content">
+                    <h3>大公主 · 张越尔</h3>
+                    <p>活泼可爱的小天使</p>
+                    <a href="yueer.html">进入相册 →</a>
+                </div>
+            </div>
+            
+            <div class="family-card">
+                <img src="photos/zhuoer/cover.jpg" alt="张卓尔">
+                <div class="content">
+                    <h3>二公主 · 张卓尔</h3>
+                    <p>聪明伶俐的小公主</p>
+                    <a href="zhuoer.html">进入相册 →</a>
+                </div>
+            </div>
+            
+            <div class="family-card">
+                <img src="photos/heer/cover.jpg" alt="张赫尔">
+                <div class="content">
+                    <h3>王子 · 张赫尔</h3>
+                    <p>家的心肝小宝贝</p>
+                    <a href="heer.html">进入相册 →</a>
+                </div>
+            </div>
+            
+            <div class="family-card">
+                <img src="photos/father/cover.jpg" alt="张顺锋">
+                <div class="content">
+                    <h3>爸爸 · 张顺锋</h3>
+                    <p>家庭的顶梁柱</p>
+                    <a href="father.html">进入相册 →</a>
+                </div>
+            </div>
+            
+            <div class="family-card">
+                <img src="photos/mother/cover.jpg" alt="徐立梅">
+                <div class="content">
+                    <h3>妈妈 · 徐立梅</h3>
+                    <p>温暖港湾的守护者</p>
+                    <a href="mother.html">进入相册 →</a>
+                </div>
+            </div>
+            
+            <div class="family-card">
+                <img src="photos/living-room/cover.jpg" alt="客厅">
+                <div class="content">
+                    <h3>客厅 · 全家福</h3>
+                    <p>幸福时光的记录</p>
+                    <a href="living-room.html">进入相册 →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>🏠 张氏家庭网站 · 2025</p>
+        <p>用爱筑家 · 温暖前行</p>
+    </footer>
+</body>
+</html>
